@@ -1,6 +1,6 @@
 ### Basic layout
 
-```
+```sql
 CREATE OR REPLACE PROCEDURE IDE_NAME
 AS
 BEGIN
@@ -9,8 +9,8 @@ END;
 ```
 
 
-Hello World
-```
+- Enter `Hello World`
+```sql
 CREATE OR REPLACE PROCEDURE IDE_NAME
 IS
 BEGIN 
@@ -24,7 +24,7 @@ Procedure created.
 ```
 
 - After see the above command we have to write the below command and after write below command, we have to select the below three line and run it.
-```
+```sql
 BEGIN 
 IDE_NAME;
 END;
@@ -37,7 +37,7 @@ Statement processed.
 ```
 
 
-## SQL Command Type
+## SQL Command Type:
 #### DDL - Data Definition Language
 **Command**
 - create
@@ -62,7 +62,7 @@ Statement processed.
 ## How to create the table
 
 **CREATE Command**
-```
+```sql
 CREATE TABLE STU(
 	ID NUMBER,
 	NAME VARCHAR2(50),
@@ -72,12 +72,28 @@ CREATE TABLE STU(
 
 **ALTER Command**
 - To add any `column` on the table
-```
+```sql
 ALTER TABLE STU ADD EMAIL VARCHR2(100);
 ```
 
 **Select Command**
 - Using this command we can see the all the table data
-```
+```sql
 SELECT * FROM <Table_Name>
+```
+
+**INSERT Command**
+- To insert data in the table
+```sql
+INSEERT INTO STU VALUE (1,'ABC', 18);
+```
+
+**Describe Command**
+- It will describe the table 
+```sql
+DESCRIBE TABLE <Table_Name>
+
+or
+
+DES TABLE <Table_Name>
 ```
